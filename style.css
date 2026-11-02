@@ -1,0 +1,109 @@
+:root{
+  --navy:#0A2E78;
+  --navy-2:#06225C;
+  --navy-3:#0F43A8;
+  --blue:#1450D2;
+  --yellow:#FFC72C;
+  --yellow-2:#FFD45C;
+  --ink:#0A2E78;
+  --muted:#3B4A6B;
+  --soft:#D6E2FF;
+  --bg:#F3F6FC;
+  --card:#ffffff;
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+h1,h2,h3{margin:0;line-height:1.1}
+h2{font-size:clamp(28px,4vw,40px);font-weight:900;letter-spacing:-.5px}
+
+/* Tugmalar */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:14px;font-weight:800;font-size:17px;text-decoration:none;border:2px solid transparent;transition:background .15s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn-y{background:var(--yellow);color:var(--navy)}
+.btn-y:hover{background:var(--yellow-2)}
+.btn-b{background:var(--blue);color:#fff}
+.btn-b:hover{background:var(--navy-3)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-tg{background:#229ED9;color:#fff}
+.btn-tg:hover{background:#1b8cc2}
+.btn-sm{min-height:44px;padding:0 16px;font-size:15px}
+.btn-lg{min-height:60px;font-size:19px;padding:0 28px}
+.btn svg{color:currentColor}
+
+/* Sarlavha qatori */
+.top{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.top-in{display:flex;align-items:center;gap:24px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:18px}
+.brand b{color:var(--yellow);font-weight:800}
+.brand-mark{width:38px;height:38px;border-radius:10px;background:var(--yellow);display:flex;align-items:center;justify-content:center}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;color:var(--soft);padding:10px 14px;border-radius:10px}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+
+/* Bosh qism */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:56px 0 64px}
+.hero::before,.hero::after{content:"";position:absolute;pointer-events:none}
+.hero::before{right:0;top:0;width:340px;height:340px;background:linear-gradient(225deg,var(--yellow) 0 22%,var(--navy-3) 22% 50%,transparent 50%)}
+.hero::after{left:0;bottom:0;width:260px;height:260px;background:linear-gradient(45deg,var(--yellow) 0 18%,var(--navy-3) 18% 45%,transparent 45%)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.eyebrow{margin:0 0 14px;font-weight:700;color:var(--yellow);letter-spacing:.5px}
+h1{font-size:clamp(44px,7vw,80px);font-weight:900;letter-spacing:-1px;line-height:.95}
+h1 span{display:block;color:var(--yellow)}
+.lead{margin:22px 0 30px;font-size:19px;font-weight:500;color:var(--soft);max-width:520px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Xizmatlar */
+.services{padding:72px 0}
+.sub{margin:12px 0 36px;color:var(--muted);font-size:18px;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:0 1px 2px rgba(10,46,120,.06),0 8px 24px rgba(10,46,120,.06)}
+.card h3{font-size:22px;font-weight:800;margin:18px 0 8px}
+.card p{margin:0;color:var(--muted);font-weight:500}
+.ic{width:60px;height:60px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.ic.y{background:var(--yellow)}
+.ic.b{background:var(--blue)}
+
+/* Manzil */
+.place{padding:0 0 72px}
+.place-card{background:var(--card);border-radius:var(--radius);padding:36px;box-shadow:0 8px 24px rgba(10,46,120,.06);border-top:6px solid var(--yellow)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:28px 0}
+.facts dt{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--blue);margin-bottom:6px}
+.facts dd{margin:0;font-size:19px;font-weight:700}
+.facts small{font-size:15px;font-weight:500;color:var(--muted)}
+
+/* Aloqa */
+.contact{background:var(--navy);color:#fff;padding:72px 0;text-align:center}
+.contact p{color:var(--soft);font-size:18px;margin:12px 0 30px}
+.contact-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* Pastki qism */
+.foot{background:var(--navy-2);color:var(--soft);padding:22px 0 26px;font-size:15px}
+.foot-in{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.foot a{text-decoration:none;font-weight:700;color:#fff}
+
+/* Telefonda pastda turadigan qoʻngʻiroq tugmasi */
+.float-call{display:none;position:fixed;right:16px;bottom:16px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--yellow);color:var(--navy);align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr}
+  .hero-art{max-width:520px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .nav,.top-call{display:none}
+  .hero{padding:40px 0 48px}
+  .hero::before{width:180px;height:180px}
+  .hero::after{width:140px;height:140px}
+  .hero-btns .btn{width:100%}
+  .grid{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  .place-card{padding:26px 20px}
+  .contact-btns .btn{width:100%}
+  .float-call{display:flex}
+}
